@@ -1,0 +1,5 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+clasificaciones_manager,clasificaciones manager,model_marvelfields_clasificaciones,group_clasmanager,1,1,1,1
+subclases_manager,subclases manager,model_marvelfields_subclases,group_clasmanager,1,1,1,1
+clasificaciones_read_all,clasificaciones all,model_marvelfields_clasificaciones,,1,0,0,0
+subclases_read_all,subclases all,model_marvelfields_subclases,,1,0,0,0

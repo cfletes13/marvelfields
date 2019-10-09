@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_clasifica_form_inherit" model="ir.ui.view">
+           <field name="name">Clasificaciones Custom</field>
+           <field name="model">res.partner</field>
+           <field name="inherit_id" ref="base.view_partner_form"/>
+           <field name="arch" type="xml">
+               <field name="category_id" position="after">
+                   <field name="clasificaciones_ids" widget="many2many_tags" options="{'color_field': 'color'}" domain="[('id', '!=', active_id)]" />
+               </field>
+           </field>
+       </record>
+
+       <record id="view_subclase_form_inherit" model="ir.ui.view">
+              <field name="name">Subclase Custom</field>
+              <field name="model">res.partner</field>
+              <field name="inherit_id" ref="base.view_partner_form"/>
+              <field name="arch" type="xml">
+                  <field name="clasificaciones_ids" position="after">
+                      <field name="subclases_ids" widget="many2many_tags" options="{'color_field': 'color'}" domain="[('id', '!=', active_id)]" />
+                  </field>
+              </field>
+          </record>
+
+
+          <record id="view_subclase_form_qoutation_inherit" model="ir.ui.view">
+                 <field name="name">Qoutati Custom</field>
+                 <field name="model">sale.order</field>
+                 <field name="inherit_id" ref="sale.view_order_form"/>
+                 <field name="arch" type="xml">
+                     <field name="payment_term_id" position="after">
+                         <field name="qou_clas" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                     </field>
+                 </field>
+             </record>
+
+            <record id="view_subclase_form_qoutation_subclase_inherit" model="ir.ui.view">
+                    <field name="name">Qoutation Subclase Custom</field>
+                    <field name="model">sale.order</field>
+                    <field name="inherit_id" ref="sale.view_order_form"/>
+                    <field name="arch" type="xml">
+                        <field name="qou_clas" position="after">
+                            <field name="qou_subclase" widget="many2many_tags"
+                                options="{'color_field': 'color'}"/>
+                        </field>
+                    </field>
+                </record>
+
+
+</odoo>
