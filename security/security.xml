@@ -3,5 +3,4 @@
     <record id="group_clasmanager" model="res.groups">
         <field name="name">Clasificaciones / Manager</field>
     </record>
-
 </odoo>

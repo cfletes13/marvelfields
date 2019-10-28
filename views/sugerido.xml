@@ -33,8 +33,26 @@
     </field>
 </record>
 
+<record id="view_mostrador_inherit" model="ir.ui.view">
+    <field name="name">Cliente Mostrador</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+        <field name="portal" position="after">
+            <field name="mostrador"/>
+        </field>
+    </field>
+</record>
 
+<record id="view_detener_factura_inherit" model="ir.ui.view">
+    <field name="name">Detener Factura</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+        <field name="mostrador" position="after">
+            <field name="dfactura"/>
+        </field>
+    </field>
+</record>
 
-
-
-   </odoo>
+</odoo>

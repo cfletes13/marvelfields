@@ -18,3 +18,13 @@ class QoutationSurtidoSugerido(models.Model):
 class PedidoPortal(models.Model):
     _inherit = 'sale.order'
     portal = fields.Char(string='Pedido Portal', size=6)
+
+
+class Mostrador(models.Model):
+    _inherit = 'sale.order'
+    mostrador = fields.Boolean(default=False, string='Cliente Mostrador', )
+
+
+class DetenerFactura(models.Model):
+    _inherit = 'sale.order'
+    dfactura = fields.Boolean(default=False, string='Detener Factura', )

@@ -11,13 +11,14 @@
                 ],
     'data': [
 
-        'views/compatibility.xml',
+        # 'views/compatibility.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/clasificaciones.xml',
         'views/subclases.xml',
         'views/clasifica.xml',
         'views/sugerido.xml',
+        'views/compatible.xml',
 
     ],
 }

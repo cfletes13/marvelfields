@@ -18,3 +18,8 @@ class SubclasePartner(models.Model):
         'marvelfields.subclases', 'marvelfields_subclases_rel',
         'src_id', 'dest_id',
         string='Subclases')
+
+
+class NoClientePartner(models.Model):
+    _inherit = "res.partner"
+    ncliente = fields.Char(string='Numero de Cliente', size=6)
