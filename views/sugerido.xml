@@ -55,4 +55,16 @@
     </field>
 </record>
 
+<record id="view_rutav_form_inherit" model="ir.ui.view">
+       <field name="name">Ruta Vendedor</field>
+       <field name="model">res.partner</field>
+       <field name="inherit_id" ref="base.view_partner_form"/>
+       <field name="arch" type="xml">
+           <field name="sugerido" position="after">
+               <field name="rutav" placeholder="Ruta Vendedor de Campo"/>
+           </field>
+       </field>
+   </record>
+
+
 </odoo>
