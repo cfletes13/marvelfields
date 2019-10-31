@@ -9,6 +9,12 @@ class SurtidoSugerido (models.Model):
     sugerido = fields.Char(string='Surtido Sugerido',)
 
 
+class RutaVendedor (models.Model):
+    _inherit = 'res.partner'
+
+    rutav = fields.Char(string='Ruta',)
+
+
 class QoutationSurtidoSugerido(models.Model):
     _inherit = 'sale.order'
     qou_sugerido = fields.Char(related='partner_id.sugerido',
