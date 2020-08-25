@@ -23,7 +23,7 @@ class QoutationSurtidoSugerido(models.Model):
 
 class PedidoPortal(models.Model):
     _inherit = 'sale.order'
-    portal = fields.Char(string='Pedido Portal', size=6)
+    portal = fields.Char(string='Pedido Portal', size=15)
 
 
 class Mostrador(models.Model):

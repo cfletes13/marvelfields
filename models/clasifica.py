@@ -22,4 +22,4 @@ class SubclasePartner(models.Model):
 
 class NoClientePartner(models.Model):
     _inherit = "res.partner"
-    ncliente = fields.Char(string='Numero de Cliente', size=6)
+    ncliente = fields.Char(string='Numero de Cliente', size=18)
