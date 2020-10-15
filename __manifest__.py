@@ -8,6 +8,7 @@
     'depends': ['stock',
                 'product',
                 'sale',
+                'account',
                 ],
     'data': [
 
@@ -19,6 +20,7 @@
         'views/clasifica.xml',
         'views/sugerido.xml',
         'views/compatible.xml',
+        'views/product_view.xml'
 
     ],
 }
