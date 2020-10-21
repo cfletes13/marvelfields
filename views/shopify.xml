@@ -7,8 +7,6 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='allow_negative_stock']" position="after">
                 <field name="x_studio_website_shopify"/>
-            </xpath>
-            <xpath expr="//field[@name='x_studio_website_shopify']" position="after">
                 <field name="x_studio_image_shopify" options="{&quot;size&quot;: [0, 90]}" widget="image" string="Imagen Shopify"/>
             </xpath>
         </field>
