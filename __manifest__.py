@@ -21,7 +21,6 @@
         'views/sugerido.xml',
         'views/compatible.xml',
         'views/product_view.xml',
-        'views/shopify.xml'
 
     ],
 }
