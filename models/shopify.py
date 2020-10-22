@@ -3,7 +3,7 @@ from odoo import fields, models
 
 
 class ProductTemplateShopify(models.Model):
-    _inherit = "product.template"
+    _inherit = 'product.template'
 
     image_shopify = fields.Binary(string='Imagen Sopify',
                                   store=True, attachment=True)
@@ -13,7 +13,7 @@ class ProductTemplateShopify(models.Model):
 
 
 class SaleOrderShopify(models.Model):
-    _inherit = "sale.order"
+    _inherit = 'sale.order'
 
     metodo_de_pago = fields.Char(string='Metodo de Pago',)
     metodo_de_envio_shopify = fields.Char(string='Metodo de Envio Shopify')
