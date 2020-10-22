@@ -8,3 +8,4 @@ from . import subclases
 from . import sugerido
 from . import compatible
 from . import shopify
+from . import saleorder_shopify
