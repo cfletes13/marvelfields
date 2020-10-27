@@ -9,6 +9,7 @@
                 'product',
                 'sale',
                 'account',
+                'sale_stock'
                 ],
     'data': [
 

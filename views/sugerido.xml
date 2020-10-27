@@ -6,7 +6,8 @@
            <field name="inherit_id" ref="base.view_partner_form"/>
            <field name="arch" type="xml">
                <field name="subclases_ids" position="after">
-                   <field name="sugerido" placeholder="Surtido Sugerido"/>
+                   <field name="warehouse_sugerido_id" options="{'no_create': True, 'no_open': True}" required="1"/>
+                   <field name="sugerido" placeholder="Surtido Sugerido" invisible="1"/>
                </field>
            </field>
        </record>
@@ -62,6 +63,17 @@
        <field name="arch" type="xml">
            <field name="sugerido" position="after">
                <field name="rutav" placeholder="Ruta Vendedor de Campo"/>
+           </field>
+       </field>
+   </record>
+
+   <record id="view_warehousesugerido_form_inherit" model="ir.ui.view">
+       <field name="name">Almacen Sugerido</field>
+       <field name="model">stock.warehouse</field>
+       <field name="inherit_id" ref="stock.view_warehouse"/>
+       <field name="arch" type="xml">
+           <field name="code" position="after">
+               <field name="sugerido"/>
            </field>
        </field>
    </record>
