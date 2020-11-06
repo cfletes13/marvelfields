@@ -23,13 +23,18 @@ class SaleOrderFields(models.Model):
 	portal = fields.Char(string='Pedido Portal', size=15)
 	mostrador = fields.Boolean(default=False, string='Cliente Mostrador', )
 	dfactura = fields.Boolean(default=False, string='Detener Factura', )
+	warehouse_sugerido_id = fields.Many2one('stock.warehouse',string="Surtido Sugerido", 
+		help="Almacen sugerido del cual se ba a surtir el pedido del cliente")
 
 	@api.onchange('partner_id')
 	def onchange_warehouse_partner_id(self):
 		if not self.partner_id:
 			return
 
-		self.update({'warehouse_id': self.partner_id.warehouse_sugerido_id.id})
+		self.update({
+			'warehouse_id': self.partner_id.warehouse_sugerido_id.id,
+			'warehouse_sugerido_id': self.partner_id.warehouse_sugerido_id
+		})
 
 class SugeridoWarehouse(models.Model):
 	_inherit = 'stock.warehouse'
