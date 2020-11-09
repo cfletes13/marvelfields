@@ -19,7 +19,7 @@
                <field name="arch" type="xml">
                    <field name="qou_subclase" position="after">
                        <field name="qou_sugerido" invisible="1"/>
-                       <field name="warehouse_sugerido_id" options="{'no_create': True, 'no_open': True}" domain="[('id','=',warehouse_id)]" required="1"/>
+                       <field name="warehouse_sugerido_id" options="{'no_create': True, 'no_open': True}" domain="[('id','=',warehouse_id)]"/>
                    </field>
                </field>
            </record>
