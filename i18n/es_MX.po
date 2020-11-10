@@ -1,0 +1,281 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* marvelfields
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-10 21:03+0000\n"
+"PO-Revision-Date: 2020-11-10 15:07-0600\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_MX\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__abreviatura
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__abreviatura
+msgid "Abreviatura"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,help:marvelfields.field_res_partner__warehouse_sugerido_id
+#: model:ir.model.fields,help:marvelfields.field_res_users__warehouse_sugerido_id
+#: model:ir.model.fields,help:marvelfields.field_sale_order__warehouse_sugerido_id
+msgid "Almacen sugerido del cual se ba a surtir el pedido del cliente"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__name
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__qou_clas
+msgid "Clasificacion"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__clasificaciones_ids
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__clasificaciones_ids
+msgid "Clasificaciones"
+msgstr ""
+
+#. module: marvelfields
+#: model:res.groups,name:marvelfields.group_clasmanager
+msgid "Clasificaciones / Manager"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.clasificaciones_form_view
+msgid "Clasificaciones Form"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.clasificaciones_tree_view
+msgid "Clasificaciones Tree"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__mostrador
+msgid "Cliente Mostrador"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__color
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__color
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__color
+msgid "Color Index"
+msgstr "Índice de Colores"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__name
+msgid "Compatible"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.compatible_form_view
+msgid "Compatible Form"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.compatible_tree_view
+msgid "Compatible Tree"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_product_product__compatible_ids
+#: model:ir.model.fields,field_description:marvelfields.field_product_template__compatible_ids
+msgid "Compatibles"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: marvelfields
+#: model:ir.actions.act_window,name:marvelfields.clasificaciones_list_action
+#: model:ir.ui.menu,name:marvelfields.clasificaciones_menu
+msgid "Contacto Clasificaciones"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.actions.act_window,name:marvelfields.subclases_list_action
+#: model:ir.ui.menu,name:marvelfields.subclases_menu
+msgid "Contacto Subclases"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__create_uid
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__create_uid
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__create_date
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__create_date
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__dfactura
+msgid "Detener Factura"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__display_name
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__display_name
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_product_product__high
+#: model:ir.model.fields,field_description:marvelfields.field_product_template__high
+#: model_terms:ir.ui.view,arch_db:marvelfields.marvel_product_template_form_view_inherit
+msgid "High"
+msgstr "Alto"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__id
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__id
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__id
+msgid "ID"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones____last_update
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible____last_update
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__write_uid
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__write_uid
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_clasificaciones__write_date
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_compatible__write_date
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_product_product__length
+#: model:ir.model.fields,field_description:marvelfields.field_product_template__length
+#: model_terms:ir.ui.view,arch_db:marvelfields.marvel_product_template_form_view_inherit
+msgid "Length"
+msgstr "Largo"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__ncliente
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__ncliente
+#: model_terms:ir.ui.view,arch_db:marvelfields.view_nocliente_form_inherit
+msgid "Numero de Cliente"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__portal
+msgid "Pedido Portal"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: marvelfields
+#: model:ir.actions.act_window,name:marvelfields.compatible_list_action
+#: model:ir.ui.menu,name:marvelfields.compatible_menu
+msgid "Product Compatible"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_product_template
+msgid "Product Template"
+msgstr "Plantilla de producto"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__rutav
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__rutav
+msgid "Ruta"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.view_rutav_form_inherit
+msgid "Ruta Vendedor de Campo"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_sale_order
+msgid "Sale Order"
+msgstr "Pedido de venta"
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_stock_warehouse
+msgid "Stock Warehouse"
+msgstr "Almacen"
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_marvelfields_subclases__name
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__qou_subclase
+msgid "Subclase"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__subclases_ids
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__subclases_ids
+msgid "Subclases"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.subclases_form_view
+msgid "Subclases Form"
+msgstr ""
+
+#. module: marvelfields
+#: model_terms:ir.ui.view,arch_db:marvelfields.subclases_tree_view
+msgid "Subclases Tree"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__sugerido
+#: model:ir.model.fields,field_description:marvelfields.field_res_partner__warehouse_sugerido_id
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__sugerido
+#: model:ir.model.fields,field_description:marvelfields.field_res_users__warehouse_sugerido_id
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__qou_sugerido
+#: model:ir.model.fields,field_description:marvelfields.field_sale_order__warehouse_sugerido_id
+#: model:ir.model.fields,field_description:marvelfields.field_stock_warehouse__sugerido
+#: model_terms:ir.ui.view,arch_db:marvelfields.view_surtido_sugerido_form_inherit
+msgid "Surtido Sugerido"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model.fields,field_description:marvelfields.field_product_product__whidth
+#: model:ir.model.fields,field_description:marvelfields.field_product_template__whidth
+#: model_terms:ir.ui.view,arch_db:marvelfields.marvel_product_template_form_view_inherit
+msgid "Whidth"
+msgstr "Ancho"
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_marvelfields_clasificaciones
+msgid "marvelfields.clasificaciones"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_marvelfields_compatible
+msgid "marvelfields.compatible"
+msgstr ""
+
+#. module: marvelfields
+#: model:ir.model,name:marvelfields.model_marvelfields_subclases
+msgid "marvelfields.subclases"
+msgstr ""
