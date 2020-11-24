@@ -24,7 +24,18 @@ class SaleOrderFields(models.Model):
 	mostrador = fields.Boolean(default=False, string='Cliente Mostrador', )
 	dfactura = fields.Boolean(default=False, string='Detener Factura', )
 	warehouse_sugerido_id = fields.Many2one('stock.warehouse',string="Surtido Sugerido", 
-		help="Almacen sugerido del cual se ba a surtir el pedido del cliente")
+		help="Almacen sugerido del cual se ba a surtir el pedido del cliente", 
+		compute='_get_warehouse_sugerido_id')
+
+	@api.one
+	@api.depends('partner_id')
+	def _get_warehouse_sugerido_id(self):
+		warehouse_sugerido_id = False
+
+		if self.partner_id.warehouse_sugerido_id:
+			warehouse_sugerido_id = self.partner_id.warehouse_sugerido_id.id
+
+		self.warehouse_sugerido_id = warehouse_sugerido_id
 
 	@api.onchange('partner_id')
 	def onchange_warehouse_partner_id(self):
@@ -32,8 +43,7 @@ class SaleOrderFields(models.Model):
 			return
 
 		self.update({
-			'warehouse_id': self.partner_id.warehouse_sugerido_id.id,
-			'warehouse_sugerido_id': self.partner_id.warehouse_sugerido_id
+			'warehouse_id': self.partner_id.warehouse_sugerido_id.id
 		})
 
 class SugeridoWarehouse(models.Model):
