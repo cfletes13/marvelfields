@@ -8,3 +8,4 @@ from . import subclases
 from . import sugerido
 from . import compatible
 from . import product
+from . import stock_location
