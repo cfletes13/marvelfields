@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="marvelsa_view_picking_withcarrier_out_form">
+            <field name="name">view_picking_withcarrier_out_form</field>
+            <field name="model">stock.picking</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="delivery.view_picking_withcarrier_out_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//group/div[@name='tracking']" position="after">
+                    <field name="delivery_cost" />
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

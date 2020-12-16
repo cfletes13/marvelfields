@@ -23,5 +23,6 @@
         'views/compatible.xml',
         'views/product_view.xml',
         'views/stock_location.xml',
+        'views/stock_picking.xml',
     ],
 }
