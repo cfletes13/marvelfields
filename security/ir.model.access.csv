@@ -4,3 +4,5 @@ subclases_manager,subclases manager,model_marvelfields_subclases,group_clasmanag
 clasificaciones_read_all,clasificaciones all,model_marvelfields_clasificaciones,,1,0,0,0
 subclases_read_all,subclases all,model_marvelfields_subclases,,1,0,0,0
 compatible_read_all,compatible all,model_marvelfields_compatible,,1,1,1,1
+temporary_read_all,temporary all,model_product_temporary,,1,1,1,0
+payment_days_read_all, payment days all,model_payment_days,,1,1,1,0

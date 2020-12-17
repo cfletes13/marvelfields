@@ -10,3 +10,6 @@ from . import compatible
 from . import product
 from . import stock_location
 from . import stock_picking
+from . import temporary
+from . import payment_days
+from . import res_partner

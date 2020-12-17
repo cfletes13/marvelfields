@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_partner_paymentdays_form_inherit" model="ir.ui.view">
+       <field name="name">Payment days partner</field>
+       <field name="model">res.partner</field>
+       <field name="inherit_id" ref="account.view_partner_property_form"/>
+       <field name="arch" type="xml">
+          <xpath expr="//group[@name='accounting_entries']/field[@name='property_account_payable_id']" position="after">
+              <field name="payment_days_ids" widget="many2many_tags" options="{'no_create': True, 'no_open': True}"/>
+              <field name="collection_executive_id" options="{'no_create': True, 'no_open': True}" />
+          </xpath>
+       </field>
+    </record>
+</odoo>

@@ -11,6 +11,7 @@
             <xpath expr="//field[@name='barcode']" position="after">
                 <field name="marca_ids" widget="many2many_tags"/>
                 <field name="refaoriginal_ids" widget="many2many_tags"/>
+                <field name="temporary_id" options="{'no_create': True, 'no_open': True}" />
                 <field name="x_studio_clasificacin" />
                 <field name="x_studio_tipo" />
                 <field name="x_can_be_sold_from_vsa" />
@@ -32,6 +33,7 @@
             <xpath expr="//field[@name='barcode']" position="after">
                 <field name="marca_ids" widget="many2many_tags"/>
                 <field name="refaoriginal_ids" widget="many2many_tags"/>
+                <field name="temporary_id" options="{'no_create': True, 'no_open': True}" />
             </xpath>
         </field>
     </record>

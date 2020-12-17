@@ -16,6 +16,7 @@
         # 'views/compatibility.xml',
         'security/security.xml',
         'security/ir.model.access.csv',
+        'data/payment_days.xml',
         'views/clasificaciones.xml',
         'views/subclases.xml',
         'views/clasifica.xml',
@@ -24,5 +25,8 @@
         'views/product_view.xml',
         'views/stock_location.xml',
         'views/stock_picking.xml',
+        'views/temporary.xml',
+        'views/payment_days.xml',
+        'views/res_partner.xml'
     ],
 }
