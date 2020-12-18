@@ -16,9 +16,7 @@
                 <field name="x_studio_tipo" />
                 
             </xpath>
-            <xpath expr="//field[@name='lst_price']" position="after">
-                <field name="x_precio_dia" />
-            </xpath>
+            
         </field>
     </record>
 
