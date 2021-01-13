@@ -9,7 +9,8 @@
                 'product',
                 'sale',
                 'account',
-                'sale_stock'
+                'sale_stock',
+                'sale_margin'
                 ],
     'data': [
 
@@ -27,6 +28,8 @@
         'views/stock_picking.xml',
         'views/temporary.xml',
         'views/payment_days.xml',
-        'views/res_partner.xml'
+        'views/res_partner.xml',
+        'data/cron_last_incomming_date.xml',
+        'views/sale_order.xml'
     ],
 }
