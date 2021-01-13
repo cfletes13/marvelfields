@@ -15,6 +15,7 @@ class Template(models.Model):
 	whidth = fields.Float(string="Whidth", compute='_compute_measures')
 	high = fields.Float(string="High", compute='_compute_measures')
 	temporary_id = fields.Many2one('product.temporary',string="Temporary")
+	is_on_catalogue = fields.Boolean(string="Is on Catalogue")
 
 	@api.depends('product_variant_ids','product_variant_ids.length','product_variant_ids.whidth','product_variant_ids.high')
 	def _compute_measures(self):

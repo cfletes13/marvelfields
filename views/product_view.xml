@@ -34,6 +34,7 @@
                 <field name="marca_ids" widget="many2many_tags"/>
                 <field name="refaoriginal_ids" widget="many2many_tags"/>
                 <field name="temporary_id" options="{'no_create': True, 'no_open': True}" />
+                <field name="is_on_catalogue"/>
             </xpath>
         </field>
     </record>
