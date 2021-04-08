@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="crm_claim_inherit">
+        <field name="name">crm claim marvelsa</field>
+        <field name="inherit_id" ref="deltatech_simple_crm_claim.crm_case_claims_form_view"/>
+        <field name="model">crm.claim</field>
+        <field name="arch" type="xml">
+            <xpath expr="/form/sheet/group/notebook/page/group/field[@name='email_from']" position="after">
+                <field name="product_tmpl_id" options="{'no_create_edit': True, 'no_open': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

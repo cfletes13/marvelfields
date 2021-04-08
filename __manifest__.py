@@ -29,6 +29,7 @@
         'views/temporary.xml',
         'views/payment_days.xml',
         'views/res_partner.xml',
+        'views/crm_claim.xml',
         #'data/cron_last_incomming_date.xml',
     ],
 }

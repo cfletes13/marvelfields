@@ -13,3 +13,4 @@ from . import stock_picking
 from . import temporary
 from . import payment_days
 from . import res_partner
+from . import crm_claim
